@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            margin: 0;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /* Para fazer o cabeçalho acompanhar a tabela */
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        td, th {
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(97, 90, 90);
+            /* Complemento para fazer o cabeçalho acompanhar a tabela  */
+        }
+
+        thead, th {
+            background-color: rgb(97, 90, 90);
+            color: white;
+        }
+         
+        /* Para adicionar efeito zebrado */
+        tbody > tr:nth-child(odd) {
+            background-color: aliceblue;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+        tfoot {
+            background-color: grey;
+            color: aliceblue;
+        }
+
+        p {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        ANATOMIA PARA AS TABELAS GRANDES:
+        TABLR
+        CAPTION
+            T-HEAD:
+                    TR, TD, TH
+                T-BODY:
+                    TR, TD, TH
+                    T-FOOT:
+                    TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+                <th>% da pop. Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+               <td>São Paulo</td>
+               <td>45.919.049</td>
+               <td>21,9%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.346</td>
+                <td>10,1%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.264.989</td>
+                <td>8,2%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.873.084</td>
+                <td>5,6%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>13.769.324</td>
+                <td>5,5%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11.377.545</td>
+                <td>5,8%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>12.339.435</td>
+                <td>5,4%</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td>9.465.543</td>
+                <td>5,7%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>3.473.765</td>
+                <td>6,8%</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td>12.343.434</td>
+                <td>8,9%</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td>12.434.678</td>
+                <td>4,4%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7.343.986</td>
+                <td>7,3%</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>21.343.786</td>
+                <td>4.5%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>22.234.434</td>
+                <td>4,8%</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total da População</td>
+                <td>78.845.634</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, voluptatum repellendus. Autem dignissimos nihil laboriosam iure unde ipsum enim perferendis obcaecati possimus minus odit, laudantium sed ab ea eligendi voluptatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit a ratione vero quos eum sit veritatis. Laboriosam, sint illum. Voluptatibus est inventore alias ab sit, vel adipisci dolores ad molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa id quia laudantium harum. Ipsum repellendus dolor ab nostrum odio nemo cum repellat. Rerum, explicabo? Similique excepturi nisi ullam sed? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe suscipit dicta! Quisquam veniam vero aliquid quod minus vitae aperiam excepturi, reprehenderit sunt magni assumenda reiciendis maiores dignissimos voluptates! Voluptas!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, voluptatum repellendus. Autem dignissimos nihil laboriosam iure unde ipsum enim perferendis obcaecati possimus minus odit, laudantium sed ab ea eligendi voluptatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit a ratione vero quos eum sit veritatis. Laboriosam, sint illum. Voluptatibus est inventore alias ab sit, vel adipisci dolores ad molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa id quia laudantium harum. Ipsum repellendus dolor ab nostrum odio nemo cum repellat. Rerum, explicabo? Similique excepturi nisi ullam sed? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe suscipit dicta! Quisquam veniam vero aliquid quod minus vitae aperiam excepturi, reprehenderit sunt magni assumenda reiciendis maiores dignissimos voluptates! Voluptas!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, voluptatum repellendus. Autem dignissimos nihil laboriosam iure unde ipsum enim perferendis obcaecati possimus minus odit, laudantium sed ab ea eligendi voluptatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit a ratione vero quos eum sit veritatis. Laboriosam, sint illum. Voluptatibus est inventore alias ab sit, vel adipisci dolores ad molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa id quia laudantium harum. Ipsum repellendus dolor ab nostrum odio nemo cum repellat. Rerum, explicabo? Similique excepturi nisi ullam sed? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe suscipit dicta! Quisquam veniam vero aliquid quod minus vitae aperiam excepturi, reprehenderit sunt magni assumenda reiciendis maiores dignissimos voluptates! Voluptas!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, voluptatum repellendus. Autem dignissimos nihil laboriosam iure unde ipsum enim perferendis obcaecati possimus minus odit, laudantium sed ab ea eligendi voluptatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit a ratione vero quos eum sit veritatis. Laboriosam, sint illum. Voluptatibus est inventore alias ab sit, vel adipisci dolores ad molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa id quia laudantium harum. Ipsum repellendus dolor ab nostrum odio nemo cum repellat. Rerum, explicabo? Similique excepturi nisi ullam sed? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe suscipit dicta! Quisquam veniam vero aliquid quod minus vitae aperiam excepturi, reprehenderit sunt magni assumenda reiciendis maiores dignissimos voluptates! Voluptas!</p>
+</body>
+</html>
