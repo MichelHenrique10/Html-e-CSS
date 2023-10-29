@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formúlarios</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+
+            <input type="text" name="nome" id="inome" required maxlength="40" placeholder="Nome completo" autocomplete="name">
+        </p>
+
+        <p>
+            <label for="inumero">Número</label>
+            <input type="number" name="numero" id="inumero" required min="1" max="30" placeholder="0 a 30"  step="1">
+        </p>
+
+        <p>
+            <label for="imedia">Média em Humanas</label>
+            <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.5">
+        </p>
+
+        <p>
+            <label for="imediae">Media de Exatas</label>
+            <input type="number" name="mediae" id="imediae" required min="0" max="10" placeholder="0 a 10" step="0.5">
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+</body>
+</html>
